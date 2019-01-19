@@ -19,12 +19,12 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background_3" translatesAutoresizingMaskIntoConstraints="NO" id="Fzk-7Y-1F3">
-                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <rect key="frame" x="0.0" y="-8" width="375" height="675"/>
                                 <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="l9z-uQ-84G">
                                 <rect key="frame" x="1" y="611" width="373" height="55"/>
-                                <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="0.5" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="55" id="U0P-jf-X15"/>
                                 </constraints>
@@ -45,7 +45,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="21f-qm-EVJ" userLabel="Login">
                                 <rect key="frame" x="1" y="554" width="373" height="55"/>
-                                <color key="backgroundColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="0.5761183647260274" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="55" id="piC-hq-fbf"/>
                                 </constraints>
@@ -67,7 +67,7 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="Fzk-7Y-1F3" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="3Tg-ZD-q9I"/>
+                            <constraint firstItem="Fzk-7Y-1F3" firstAttribute="topMargin" secondItem="6Tk-OE-BBY" secondAttribute="top" id="3Tg-ZD-q9I"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="l9z-uQ-84G" secondAttribute="bottom" constant="1" id="9dm-vL-qb9"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="l9z-uQ-84G" secondAttribute="trailing" constant="1" id="Izz-qL-Ttt"/>
                             <constraint firstItem="21f-qm-EVJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="1" id="R6V-Jk-sLx"/>
@@ -93,7 +93,18 @@
                     <view key="view" contentMode="scaleToFill" id="Y2U-qs-BPY">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background_2" translatesAutoresizingMaskIntoConstraints="NO" id="1uB-np-RW5">
+                                <rect key="frame" x="0.0" y="-8" width="375" height="675"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="0.2527923882" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="1rH-yZ-RAH" firstAttribute="trailing" secondItem="1uB-np-RW5" secondAttribute="trailing" id="CWc-H7-SzL"/>
+                            <constraint firstItem="1rH-yZ-RAH" firstAttribute="bottom" secondItem="1uB-np-RW5" secondAttribute="bottom" id="E80-Wp-I5N"/>
+                            <constraint firstItem="1uB-np-RW5" firstAttribute="topMargin" secondItem="1rH-yZ-RAH" secondAttribute="top" id="qHb-cO-Wif"/>
+                            <constraint firstItem="1uB-np-RW5" firstAttribute="leading" secondItem="1rH-yZ-RAH" secondAttribute="leading" id="tDC-o3-MXf"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="1rH-yZ-RAH"/>
                     </view>
                 </viewController>
@@ -108,7 +119,18 @@
                     <view key="view" contentMode="scaleToFill" id="noA-KE-hEc">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background_1" translatesAutoresizingMaskIntoConstraints="NO" id="qYf-sk-ibe">
+                                <rect key="frame" x="0.0" y="-8" width="375" height="675"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" red="0.26274509800000001" green="0.90980392160000001" blue="0.58431372550000005" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="qYf-sk-ibe" firstAttribute="leading" secondItem="0Ve-nn-zM6" secondAttribute="leading" id="5ll-Dt-qIh"/>
+                            <constraint firstItem="qYf-sk-ibe" firstAttribute="topMargin" secondItem="0Ve-nn-zM6" secondAttribute="top" id="FCA-EK-XmZ"/>
+                            <constraint firstItem="0Ve-nn-zM6" firstAttribute="trailing" secondItem="qYf-sk-ibe" secondAttribute="trailing" id="SUw-ip-0lz"/>
+                            <constraint firstItem="0Ve-nn-zM6" firstAttribute="bottom" secondItem="qYf-sk-ibe" secondAttribute="bottom" id="xdD-4q-7Oh"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="0Ve-nn-zM6"/>
                     </view>
                 </viewController>
@@ -136,6 +158,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="background_1" width="320" height="568"/>
+        <image name="background_2" width="320" height="568"/>
         <image name="background_3" width="320" height="568"/>
     </resources>
 </document>

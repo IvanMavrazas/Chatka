@@ -65,6 +65,12 @@
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="avatarImageView" destination="lXd-3h-eJ2" id="A5l-1v-vBT"/>
+                <outlet property="messageBackground" destination="biD-QU-QqC" id="uE9-1B-rwR"/>
+                <outlet property="messageBody" destination="GsQ-Sf-KDp" id="oz9-EL-Vm4"/>
+                <outlet property="senderUsername" destination="lS0-2V-qIS" id="N0O-04-ea5"/>
+            </connections>
             <point key="canvasLocation" x="56" y="62.068965517241381"/>
         </tableViewCell>
     </objects>

@@ -118,6 +118,9 @@
                                         <state key="normal" title="Register">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="registerButtonPressed:" destination="hUP-Qw-btx" eventType="touchUpInside" id="uae-bK-idt"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -159,6 +162,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="1rH-yZ-RAH"/>
                     </view>
+                    <connections>
+                        <outlet property="passwordTextfield" destination="dDr-05-y9F" id="z00-3D-Byb"/>
+                        <outlet property="usernameTextfield" destination="Wl7-Kq-rM7" id="dMS-XF-338"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yVg-6a-Hef" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -196,6 +203,9 @@
                                         <state key="normal" title="Login">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="loginButtonPressed:" destination="eT8-1k-Sqp" eventType="touchUpInside" id="Mhe-Oq-mtO"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -235,6 +245,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="0Ve-nn-zM6"/>
                     </view>
+                    <connections>
+                        <outlet property="passwordTextfield" destination="t3I-Gi-cPj" id="3vU-aE-qNw"/>
+                        <outlet property="userNameTextfield" destination="iUQ-pU-5Ko" id="hP4-D6-8Mf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eb2-Ds-0Gb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -264,9 +278,33 @@
                             </tableView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4VB-UK-3rI" userLabel="Message content">
                                 <rect key="frame" x="0.0" y="617" width="375" height="50"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qK1-dR-JYS">
+                                        <rect key="frame" x="8" y="10" width="337" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vi4-n9-ycK">
+                                        <rect key="frame" x="345" y="10" width="30" height="30"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="vi4-n9-ycK" secondAttribute="height" multiplier="1:1" id="4pZ-sM-9AX"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="12"/>
+                                        <state key="normal" title="Send"/>
+                                    </button>
+                                </subviews>
                                 <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
+                                    <constraint firstItem="vi4-n9-ycK" firstAttribute="top" secondItem="4VB-UK-3rI" secondAttribute="top" constant="10" id="6fL-rX-Xdg"/>
+                                    <constraint firstItem="qK1-dR-JYS" firstAttribute="top" secondItem="4VB-UK-3rI" secondAttribute="top" constant="10" id="KyB-aB-1du"/>
                                     <constraint firstAttribute="height" constant="50" id="OHq-5m-DXY"/>
+                                    <constraint firstAttribute="trailing" secondItem="vi4-n9-ycK" secondAttribute="trailing" id="cnS-b8-b9k"/>
+                                    <constraint firstAttribute="bottom" secondItem="qK1-dR-JYS" secondAttribute="bottom" constant="10" id="gC3-4v-3ej"/>
+                                    <constraint firstItem="vi4-n9-ycK" firstAttribute="leading" secondItem="qK1-dR-JYS" secondAttribute="trailing" id="sbo-6m-2wW"/>
+                                    <constraint firstItem="qK1-dR-JYS" firstAttribute="leading" secondItem="4VB-UK-3rI" secondAttribute="leading" constant="8" id="tEP-Uf-3IU"/>
+                                    <constraint firstAttribute="bottom" secondItem="vi4-n9-ycK" secondAttribute="bottom" constant="10" id="wqv-r2-03U"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -282,6 +320,11 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="YgO-fX-HNR"/>
                     </view>
+                    <connections>
+                        <outlet property="messageTableView" destination="Ruk-u7-Wvl" id="plI-vX-gPq"/>
+                        <outlet property="messageTextView" destination="qK1-dR-JYS" id="jqC-RF-9Tj"/>
+                        <outlet property="sendMessageButton" destination="vi4-n9-ycK" id="xP0-8j-IAK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cjM-63-qMe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

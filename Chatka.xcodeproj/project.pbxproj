@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B2C2A6221F4B34700E3F07B /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B2C2A6121F4B34700E3F07B /* ChatViewController.swift */; };
+		0B2C2A6521F4BB5D00E3F07B /* CustomMessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B2C2A6321F4BB5D00E3F07B /* CustomMessageCell.swift */; };
+		0B2C2A6621F4BB5D00E3F07B /* CustomMessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B2C2A6421F4BB5D00E3F07B /* CustomMessageCell.xib */; };
 		0BDE808621EFA5E9001CCEAF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BDE808521EFA5E9001CCEAF /* AppDelegate.swift */; };
 		0BDE808821EFA5E9001CCEAF /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BDE808721EFA5E9001CCEAF /* WelcomeViewController.swift */; };
 		0BDE808B21EFA5E9001CCEAF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0BDE808921EFA5E9001CCEAF /* Main.storyboard */; };
@@ -17,6 +20,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0B2C2A6121F4B34700E3F07B /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		0B2C2A6321F4BB5D00E3F07B /* CustomMessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomMessageCell.swift; sourceTree = "<group>"; };
+		0B2C2A6421F4BB5D00E3F07B /* CustomMessageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomMessageCell.xib; sourceTree = "<group>"; };
 		0BDE808221EFA5E9001CCEAF /* Chatka.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chatka.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0BDE808521EFA5E9001CCEAF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0BDE808721EFA5E9001CCEAF /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
@@ -39,6 +45,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0B2C2A5C21F3A6E000E3F07B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0BDE808521EFA5E9001CCEAF /* AppDelegate.swift */,
+				0BF62E0A21F34ADB0004701A /* RegisterViewController.swift */,
+				0B2C2A6121F4B34700E3F07B /* ChatViewController.swift */,
+				0BDE808721EFA5E9001CCEAF /* WelcomeViewController.swift */,
+				0BF62E0821F34AC70004701A /* LoginViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		0B2C2A6721F4BF2500E3F07B /* Custom Cell */ = {
+			isa = PBXGroup;
+			children = (
+				0B2C2A6321F4BB5D00E3F07B /* CustomMessageCell.swift */,
+				0B2C2A6421F4BB5D00E3F07B /* CustomMessageCell.xib */,
+			);
+			path = "Custom Cell";
+			sourceTree = "<group>";
+		};
 		0BDE807921EFA5E9001CCEAF = {
 			isa = PBXGroup;
 			children = (
@@ -58,10 +85,7 @@
 		0BDE808421EFA5E9001CCEAF /* Chatka */ = {
 			isa = PBXGroup;
 			children = (
-				0BDE808521EFA5E9001CCEAF /* AppDelegate.swift */,
-				0BDE808721EFA5E9001CCEAF /* WelcomeViewController.swift */,
-				0BF62E0821F34AC70004701A /* LoginViewController.swift */,
-				0BF62E0A21F34ADB0004701A /* RegisterViewController.swift */,
+				0B2C2A5C21F3A6E000E3F07B /* Controller */,
 				0BF62E0C21F34AF20004701A /* View */,
 				0BDE808C21EFA5EE001CCEAF /* Assets.xcassets */,
 				0BDE809121EFA5EE001CCEAF /* Info.plist */,
@@ -72,6 +96,7 @@
 		0BF62E0C21F34AF20004701A /* View */ = {
 			isa = PBXGroup;
 			children = (
+				0B2C2A6721F4BF2500E3F07B /* Custom Cell */,
 				0BDE808E21EFA5EE001CCEAF /* LaunchScreen.storyboard */,
 				0BDE808921EFA5E9001CCEAF /* Main.storyboard */,
 			);
@@ -137,6 +162,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0BDE809021EFA5EE001CCEAF /* LaunchScreen.storyboard in Resources */,
+				0B2C2A6621F4BB5D00E3F07B /* CustomMessageCell.xib in Resources */,
 				0BDE808D21EFA5EE001CCEAF /* Assets.xcassets in Resources */,
 				0BDE808B21EFA5E9001CCEAF /* Main.storyboard in Resources */,
 			);
@@ -152,6 +178,8 @@
 				0BF62E0921F34AC70004701A /* LoginViewController.swift in Sources */,
 				0BDE808821EFA5E9001CCEAF /* WelcomeViewController.swift in Sources */,
 				0BDE808621EFA5E9001CCEAF /* AppDelegate.swift in Sources */,
+				0B2C2A6521F4BB5D00E3F07B /* CustomMessageCell.swift in Sources */,
+				0B2C2A6221F4B34700E3F07B /* ChatViewController.swift in Sources */,
 				0BF62E0B21F34ADB0004701A /* RegisterViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

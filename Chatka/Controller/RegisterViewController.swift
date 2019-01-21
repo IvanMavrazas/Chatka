@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Firebase
+import SVProgressHUD
 
 class RegisterViewController: UIViewController {
     
@@ -25,4 +27,10 @@ class RegisterViewController: UIViewController {
         
     }
     
+    func register() {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        guard let registerVC = storyboard.instantiateViewController(withIdentifier: "RegisterViewController") as? RegisterViewController else {
+            fatalError("Couldn't load RegisterViewController")
+        }
+    }
 }

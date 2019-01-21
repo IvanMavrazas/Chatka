@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Firebase
+import SVProgressHUD
 
 class LoginViewController: UIViewController {
     
@@ -17,12 +19,16 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        
     }
     
  
     @IBAction func loginButtonPressed(_ sender: UIButton) {
         
+
+    }
+    
+    func login() {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         guard let loginVC = storyboard.instantiateViewController(withIdentifier: "ChatViewController") as? ChatViewController else {
             fatalError("couldn't find LoginViewController")

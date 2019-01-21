@@ -7,6 +7,9 @@
 //
 
 import UIKit
+import Firebase
+import SVProgressHUD
+import ChameleonFramework
 
 class ChatViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
     

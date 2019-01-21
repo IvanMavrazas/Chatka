@@ -12,7 +12,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="74" id="KGk-i7-Jjw" customClass="TableViewCell" customModule="Chatka" customModuleProvider="target">
+        <tableViewCell contentMode="scaleToFill" restorationIdentifier="CustomMessageCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="customMessageCell" rowHeight="74" id="KGk-i7-Jjw" customClass="CustomMessageCell" customModule="Chatka" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="320" height="74"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
@@ -66,10 +66,10 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
-                <outlet property="avatarImageView" destination="lXd-3h-eJ2" id="A5l-1v-vBT"/>
-                <outlet property="messageBackground" destination="biD-QU-QqC" id="uE9-1B-rwR"/>
-                <outlet property="messageBody" destination="GsQ-Sf-KDp" id="oz9-EL-Vm4"/>
-                <outlet property="senderUsername" destination="lS0-2V-qIS" id="N0O-04-ea5"/>
+                <outlet property="avatarImageView" destination="lXd-3h-eJ2" id="sjB-5E-4Nj"/>
+                <outlet property="messageBackground" destination="biD-QU-QqC" id="Why-Q8-nxd"/>
+                <outlet property="messageBody" destination="GsQ-Sf-KDp" id="ALB-4X-n3o"/>
+                <outlet property="senderUsername" destination="lS0-2V-qIS" id="jUA-Nr-JN4"/>
             </connections>
             <point key="canvasLocation" x="56" y="62.068965517241381"/>
         </tableViewCell>

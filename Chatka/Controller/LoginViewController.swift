@@ -23,5 +23,10 @@ class LoginViewController: UIViewController {
  
     @IBAction func loginButtonPressed(_ sender: UIButton) {
         
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        guard let loginVC = storyboard.instantiateViewController(withIdentifier: "ChatViewController") as? ChatViewController else {
+            fatalError("couldn't find LoginViewController")
+        }
+        show(loginVC, sender: self)
     }
 }

@@ -118,6 +118,9 @@
                                         <state key="normal" title="Register">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="registerButtonPressed:" destination="hUP-Qw-btx" eventType="touchUpInside" id="2Vn-vQ-ude"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -160,6 +163,7 @@
                         <viewLayoutGuide key="safeArea" id="1rH-yZ-RAH"/>
                     </view>
                     <connections>
+                        <outlet property="passwordTextfield" destination="dDr-05-y9F" id="Y6z-Yd-HKQ"/>
                         <outlet property="usernameTextfield" destination="Wl7-Kq-rM7" id="dMS-XF-338"/>
                     </connections>
                 </viewController>
@@ -324,7 +328,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cjM-63-qMe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1692" y="261"/>
+            <point key="canvasLocation" x="1634" y="261"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Uha-6b-sNF">

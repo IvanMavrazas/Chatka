@@ -25,12 +25,23 @@ class RegisterViewController: UIViewController {
 
     @IBAction func registerButtonPressed(_ sender: UIButton) {
         
+        Auth.auth().createUser(withEmail: usernameTextfield.text!, password: passwordTextfield.text!) { (user, error) in
+            
+            if error != nil {
+                print(error)
+            } else {
+                print("Registration successfull!")
+            
+            }
+            self.register()
+        }
     }
     
     func register() {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        guard let registerVC = storyboard.instantiateViewController(withIdentifier: "RegisterViewController") as? RegisterViewController else {
+        guard let registerVC = storyboard.instantiateViewController(withIdentifier: "ChatViewController") as? ChatViewController else {
             fatalError("Couldn't load RegisterViewController")
         }
+        show(registerVC, sender: self)
     }
 }

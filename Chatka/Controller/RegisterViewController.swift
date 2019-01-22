@@ -25,8 +25,10 @@ class RegisterViewController: UIViewController {
 
     @IBAction func registerButtonPressed(_ sender: UIButton) {
         
+        SVProgressHUD.show()
+        
         Auth.auth().createUser(withEmail: usernameTextfield.text!, password: passwordTextfield.text!) { (user, error) in
-            
+                                    
             if error != nil {
                 print(error)
             } else {
@@ -34,6 +36,7 @@ class RegisterViewController: UIViewController {
             
             }
             self.register()
+            SVProgressHUD.dismiss()
         }
     }
     

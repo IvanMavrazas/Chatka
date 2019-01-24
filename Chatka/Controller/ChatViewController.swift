@@ -29,18 +29,34 @@ class ChatViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
         messageTableView.dataSource = self
         messageTextView.delegate = self
         
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(tableViewTapped))
+        messageTableView.addGestureRecognizer(tapGesture)
+        
         messageTableView.register(UINib(nibName: "CustomMessageCell", bundle: nil), forCellReuseIdentifier: "customMessageCell")
     }
     
 
     func textFieldDidBeginEditing(_ textField: UITextField) {
-        heightConstraint.constant = 308
-        view.layoutIfNeeded()
+
+        UIView.animate(withDuration: 1) {
+            
+            self.heightConstraint.constant = 308
+            self.view.layoutIfNeeded()
+        }
     }
     
     func textFieldDidEndEditing(_ textField: UITextField) {
-        
+        UIView.animate(withDuration: 0.5) {
+            
+            self.heightConstraint.constant = 50
+            self.view.layoutIfNeeded()
+        }
     }
+    
+    @objc func tableViewTapped() {
+        messageTextView.endEditing(true )
+    }
+    
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "customMessageCell", for: indexPath) as! CustomMessageCell

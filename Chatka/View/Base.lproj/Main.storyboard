@@ -18,7 +18,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background_3" translatesAutoresizingMaskIntoConstraints="NO" id="Fzk-7Y-1F3">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="patrick-tomasso-216284" translatesAutoresizingMaskIntoConstraints="NO" id="Fzk-7Y-1F3">
                                 <rect key="frame" x="0.0" y="-8" width="375" height="675"/>
                                 <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </imageView>
@@ -301,10 +301,8 @@
                                     <constraint firstItem="qK1-dR-JYS" firstAttribute="top" secondItem="4VB-UK-3rI" secondAttribute="top" constant="10" id="KyB-aB-1du"/>
                                     <constraint firstAttribute="height" constant="50" id="OHq-5m-DXY"/>
                                     <constraint firstAttribute="trailing" secondItem="vi4-n9-ycK" secondAttribute="trailing" id="cnS-b8-b9k"/>
-                                    <constraint firstAttribute="bottom" secondItem="qK1-dR-JYS" secondAttribute="bottom" constant="10" id="gC3-4v-3ej"/>
                                     <constraint firstItem="vi4-n9-ycK" firstAttribute="leading" secondItem="qK1-dR-JYS" secondAttribute="trailing" id="sbo-6m-2wW"/>
                                     <constraint firstItem="qK1-dR-JYS" firstAttribute="leading" secondItem="4VB-UK-3rI" secondAttribute="leading" constant="8" id="tEP-Uf-3IU"/>
-                                    <constraint firstAttribute="bottom" secondItem="vi4-n9-ycK" secondAttribute="bottom" constant="10" id="wqv-r2-03U"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -321,6 +319,7 @@
                         <viewLayoutGuide key="safeArea" id="YgO-fX-HNR"/>
                     </view>
                     <connections>
+                        <outlet property="heightConstraint" destination="OHq-5m-DXY" id="aU7-KR-EDL"/>
                         <outlet property="messageTableView" destination="Ruk-u7-Wvl" id="plI-vX-gPq"/>
                         <outlet property="messageTextView" destination="qK1-dR-JYS" id="jqC-RF-9Tj"/>
                         <outlet property="sendMessageButton" destination="vi4-n9-ycK" id="xP0-8j-IAK"/>
@@ -352,6 +351,6 @@
     <resources>
         <image name="background_1" width="320" height="568"/>
         <image name="background_2" width="320" height="568"/>
-        <image name="background_3" width="320" height="568"/>
+        <image name="patrick-tomasso-216284" width="4592" height="3448"/>
     </resources>
 </document>

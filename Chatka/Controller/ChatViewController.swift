@@ -59,10 +59,18 @@ class ChatViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
         messageTextView.endEditing(true )
     }
     
+    func configureTableView() {
+        
+        messageTableView.rowHeight = UITableView.automaticDimension
+        messageTableView.estimatedRowHeight = 120.0
+    }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "customMessageCell", for: indexPath) as! CustomMessageCell
         cell.messageBody.text = messages[indexPath.row].messageText
+        cell.senderUsername.text = messages[indexPath.row].sender
+        cell.avatarImageView.image = UIImage(named: "egg")
+        
         return cell
     }
 
